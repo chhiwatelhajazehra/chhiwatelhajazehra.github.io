@@ -1,1 +1,43 @@
-.home-page-navbar .text-logo{color: #FFF;font-size: 25px;text-decoration: none;font-family: 'fonts/Abeer_2711-يوم-الجمعة', sans-serif;cursor: pointer;z-index: 100;transition: 0.5s;-webkit-user-select: none;user-select: none}.products-page-navbar .text-logo{color: #000;font-size: 25px;text-decoration: none;font-family: 'fonts/Abeer_2711-يوم-الجمعة', sans-serif;cursor: pointer;z-index: 100;transition: 0.5s;-webkit-user-select: none;user-select: none}@media only screen and (max-width: 600px){.logo{font-size: 20px}}
+.home-page-navbar .text-logo
+{
+	color: #FFF;
+	font-size: 25px;
+	text-decoration: none;
+	
+	/*font-family: 'fonts/HONORSansArabicUI-R', sans-serif;*/
+	font-family: 'fonts/Abeer_2711-يوم-الجمعة', sans-serif;
+
+	cursor: pointer;
+	z-index: 100;
+	transition: 0.5s;
+
+	-webkit-user-select: none;
+  	user-select: none;
+}
+
+.products-page-navbar .text-logo
+{
+	color: #000;
+	font-size: 25px;
+	text-decoration: none;
+	
+	/*font-family: 'fonts/HONORSansArabicUI-R', sans-serif;*/
+	font-family: 'fonts/Abeer_2711-يوم-الجمعة', sans-serif;
+
+	cursor: pointer;
+	z-index: 100;
+	transition: 0.5s;
+
+	-webkit-user-select: none;
+  	user-select: none;
+}
+
+/*------------------ media query for less than 600 screen size -------------------*/
+
+@media only screen and (max-width: 600px)
+{
+	.logo
+	{
+		font-size: 20px;
+	}
+}

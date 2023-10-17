@@ -1,1 +1,25 @@
-::-webkit-scrollbar{width: 1.1vw}::-webkit-scrollbar-track{background: #d1e5ff}::-webkit-scrollbar-thumb{background: #4169E1}::-webkit-scrollbar-thumb:hover{background: #2C458E}
+::-webkit-scrollbar
+{
+	width: 1.1vw;
+	/*display: none;*/
+}
+
+::-webkit-scrollbar-track
+{
+	/*transition: color 0.5s;*/
+	background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb
+{
+	/*background: linear-gradient(#642bff, #ff22e6);*/
+	/*border-radius: 10px;*/
+	background: #4169E1;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+	/*background: linear-gradient(#642bff, #ff22e6);*/
+	/*border-radius: 10px;*/
+	background: #2C458E;
+}
