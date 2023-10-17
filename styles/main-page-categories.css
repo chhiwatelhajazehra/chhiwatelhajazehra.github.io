@@ -48,7 +48,7 @@
 .main-page-categories-title::after
 {
     content: '';
-    background: #4169E1;
+    background: var(--the-red);
 
     width: 80px;
     height: 5px;

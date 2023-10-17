@@ -37,7 +37,7 @@
 .explorebtn spanB
 {
 	/*background: #4169E1;*/
-	background: white;
+	background: var(--the-yellow);
 	height: 100%;
 	width: 0;
 	border-radius: 25px;

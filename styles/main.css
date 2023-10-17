@@ -52,7 +52,7 @@
 		content: '';
 		height: 3px;
 		width: 0;
-		background: #4169E1;
+		background: var(--the-red);
 		position: absolute;
 		left: 0;
 		bottom: -10px;
@@ -85,7 +85,7 @@
 		content: '';
 		height: 3px;
 		width: 0;
-		background: #4169E1;
+		background: var(--the-red);
 		position: absolute;
 		left: 0;
 		bottom: -10px;
@@ -321,11 +321,10 @@ p
 	display: inline-block;
 
 	/*red (original)*/
-	/*background: #ff523b;*/
+	/*background: var(--the-yellow);*/
 
-	/*blue*/
-	/*background: #4169E1;*/
-	background: #F2A70D;
+	background: var(--the-red);
+	/*background: #F2A70D;*/
 
 	font-size: 24px;
 
@@ -343,7 +342,7 @@ p
 
 .add-to-cart-btn:hover
 {
-	background: #563434;
+	background: var(--the-yellow);
 }
 
 
@@ -446,7 +445,7 @@ p
 
 .checked {
   color: orange;
-  /*color: #ff523b;*/
+  /*color: var(--the-yellow);*/
 }
 
 .title
@@ -463,9 +462,9 @@ p
 	content: '';
 
 	/*red (original)*/
-	/*background: #ff523b;*/
+	/*background: var(--the-yellow);*/
 	/*blue*/
-	background:	#4169E1;
+	background:	var(--the-red);
 
 	width: 80px;
 	height: 5px;
@@ -545,10 +544,10 @@ small
 {
 	font-size: 34px;
 	/*red (original)*/
-	/*color: #ff523b;*/
+	/*color: var(--the-yellow);*/
 
 	/*blue*/
-	color: #4169E1;
+	color: var(--the-red);
 }
 
 .col-3 p
@@ -696,7 +695,7 @@ small
 
 #products-select
 {
-	/*border: 1px solid #ff523b;*/
+	/*border: 1px solid var(--the-yellow);*/
 	border: none;
 	border-radius: 5px; /* mine */
 	padding: 10px 30px;
@@ -732,7 +731,7 @@ select:focus
 .page-btn span
 {
 	display: inline-block;
-	border: 1px solid #ff523b;
+	border: 1px solid var(--the-yellow);
 	margin-left: 10px;
 	width: 40px;
 	height: 40px;
@@ -743,7 +742,7 @@ select:focus
 
 .page-btn span:hover
 {
-	background: #ff523b;
+	background: var(--the-yellow);
 	color: #fff;
 }
 
@@ -776,7 +775,7 @@ select:focus
 	padding-left: 10px;
 	font-size: 20px;
 	margin-right: 10px;
-	border: 1px solid #ff523b;
+	border: 1px solid var(--the-yellow);
 }*/
 
 
@@ -836,7 +835,7 @@ input:focus
 
 .single-product .fa
 {
-	color: #ff523b;
+	color: var(--the-yellow);
 	margin-left: 10px;
 }
 
@@ -890,7 +889,7 @@ th
 	text-align: left;
 	padding: 5px;
 	color: #fff;
-	background: #ff523b;
+	background: var(--the-yellow);
 	font-weight: normal;
 }
 
@@ -908,7 +907,7 @@ td input
 
 td a
 {
-	color: #ff523b;
+	color: var(--the-yellow);
 	font-size: 12px;
 }
 
@@ -927,7 +926,7 @@ td img
 
 .total-price table
 {
-	border-top: 3px solid #ff523b;
+	border-top: 3px solid var(--the-yellow);
 	width: 100%;
 	max-width: 400px;
 }

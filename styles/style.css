@@ -109,7 +109,7 @@ p
 	/*background: #ff523b;*/
 
 	/*blue*/
-	background: #4169E1;
+	background: var(--the-red);
 
 	color: #fff;
 	padding: 8px 30px;
@@ -198,7 +198,7 @@ p
 	/*red (original)*/
 	/*background: #ff523b;*/
 	/*blue*/
-	background:	#4169E1;
+	background:	var(--the-red);
 
 	width: 80px;
 	height: 5px;
@@ -280,7 +280,7 @@ small
 	/*color: #ff523b;*/
 
 	/*blue*/
-	color: #4169E1;
+	color: var(--the-red);
 }
 
 .col-3 p
@@ -359,7 +359,7 @@ small
 		content: '';
 		height: 3px;
 		width: 0;
-		background: #4169E1;
+		background: var(--the-red);
 		position: absolute;
 		left: 0;
 		bottom: -10px;

@@ -8,18 +8,21 @@
 {
 	/*transition: color 0.5s;*/
 	background: #d1e5ff;
+	/*background: var(--the-red);*/
 }
 
 ::-webkit-scrollbar-thumb
 {
 	/*background: linear-gradient(#642bff, #ff22e6);*/
 	/*border-radius: 10px;*/
-	background: #4169E1;
+	/*background: #4169E1;*/
+	background: var(--the-red);
 }
 
 ::-webkit-scrollbar-thumb:hover
 {
 	/*background: linear-gradient(#642bff, #ff22e6);*/
 	/*border-radius: 10px;*/
-	background: #2C458E;
+	/*background: #2C458E;*/
+	background: var(--light-red);
 }
