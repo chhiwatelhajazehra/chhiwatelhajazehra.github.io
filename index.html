@@ -702,25 +702,26 @@
 			var r = document.querySelector(':root');
 			
 			var counter=1;
-
 			document.getElementById('img-slider-slides-radio-'+counter).checked = true;
-				// document.getElementById('img-slider-slides-radio-'+counter).style.backgroundColor="#40D4DC";
 			counter++;
-			if(counter>4)
-			{
-				counter=1;
-			}
 
-			setInterval(function(){
-				document.getElementById('img-slider-slides-radio-'+counter).checked = true;
+			setInterval(function()
+			{
+				// document.getElementById('img-slider-slides-radio-'+counter).checked = true;
 				// document.getElementById('img-slider-slides-radio-'+counter).style.backgroundColor="#40D4DC";
 				// r.style.getPropertyValue('--clr-one');
-				
-				counter++;
-				if(counter>4)
+
+				for(let i=1; i<5; i++)
 				{
-					counter=1;
+					if(document.getElementById('img-slider-slides-radio-'+i).checked)
+					{
+						document.getElementById('img-slider-slides-radio-'+i).checked=false;
+						document.getElementById('img-slider-slides-radio-'+( i==4?1:i+1 )).checked=true;
+						counter= i==4?1:i+1;
+						return;
+					}
 				}
+
 			}, 5000);
 		</script>
 
