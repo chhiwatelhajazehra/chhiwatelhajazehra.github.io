@@ -315,7 +315,7 @@
 							const _product = products[num];
 							col_4_Element.id=_product.id;
 							CreateElement('img', '', _div_parent).src = _product.img_src;
-							// CreateElement('h4', '', _a).innerHTML = _product.name;
+							CreateElement('h4', '', _a).innerHTML = _product.name.includes("produit")?"":_product.name;
 							// CreateElement('p', '', _a).innerHTML = _product.price+" DH";
 					}
 			}
@@ -364,10 +364,10 @@
 		document.title = "شهيوات الحاجة زهرة - " + curr_product.name;
 
 		var _row = document.getElementsByClassName('small-container single-product')[0].children[0];
-		_row.children[1].children[1].innerText = curr_product.name.includes("produit")?"":curr_product.name; // h1 : product name
+		_row.children[1].children[1].innerText =  curr_product.name.includes("produit")?"":curr_product.name; // h1 : product name
 		// _row.children[1].children[2].innerText = curr_product.price+" DH"; // h4 : product price
 		// _row.children[1].children[8].innerText = curr_product.product_details_descriptions; // p : product description
-		// _row.children[1].children[7].innerText = curr_product.product_details_descriptions; // p : product description // select size got removed
+		// _row.children[1].children[7].innerText = curr_product.name.includes("produit")?"":curr_product.product_details_descriptions; // p : product description // select size got removed
 
 		_row.children[0].children[0].children[2].src = curr_product.product_details_imgs[0];
 		
