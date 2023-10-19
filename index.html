@@ -78,7 +78,7 @@
 
 						<video
 					    id="my-video"
-					    class="video-js vjs-fill back-video"
+					    class="video-js back-video"
 					    controls="false"
 					    preload="auto"
 					    data-setup="{}"
@@ -104,14 +104,14 @@
 					  <script type="text/javascript">
 					  	const player = videojs('my-video');
 
-							videojs('my-video', {autoplay: true});
+							// videojs('my-video', {autoplay: true});
 
 				      // Hide the progress control from the control bar
 
 						  player.ready(function() {
 							  player.muted(true);
 							  player.userActive(false)
-								videojs('my-video', {autoplay: true});
+								// videojs('my-video', {autoplay: true});
 								player.autoplay();
 				      	// player.fluid(true);
 				      	// player.fill(true);
