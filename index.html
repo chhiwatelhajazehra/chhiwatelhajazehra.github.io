@@ -82,8 +82,8 @@
 					    controls="false"
 					    preload="auto"
 					    data-setup="{}"
-					    muted="true"
-					    autoplay="true"
+					    muted
+					    autoplay
 					    loop
 
 					    style="object-fit: cover; width: inherit; height: inherit;"
@@ -104,11 +104,15 @@
 					  <script type="text/javascript">
 					  	const player = videojs('my-video');
 
+							videojs('my-video', {autoplay: true});
+
 				      // Hide the progress control from the control bar
 
 						  player.ready(function() {
 							  player.muted(true);
 							  player.userActive(false)
+								videojs('my-video', {autoplay: true});
+								player.autoplay();
 				      	// player.fluid(true);
 				      	// player.fill(true);
 				      	// player.responsive(true);
