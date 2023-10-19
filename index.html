@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
+	<link href="https://vjs.zencdn.net/8.6.0/video-js.css" rel="stylesheet" />
+
 	<link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/colors.css">
 
@@ -67,9 +69,55 @@
 
 
 			<div class="hero">
-				<video autoplay loop muted plays-inline playsinline preload="auto" class="back-video">
-					<source src="assets/videos/video4_edit - no audio - compressed.mp4" type="video/mp4">
-				</video>
+
+				<!-- Video START -->
+
+						<!-- <video autoplay loop muted plays-inline playsinline preload="auto" class="back-video"> -->
+							<!-- <source src="assets/videos/video4_edit - no audio - compressed.mp4" type="video/mp4"> -->
+						<!-- </video> -->
+
+						<video
+					    id="my-video"
+					    class="video-js vjs-fill back-video"
+					    controls="false"
+					    preload="auto"
+					    data-setup="{}"
+					    muted="true"
+					    autoplay="true"
+					    loop
+
+					    style="object-fit: cover;"
+					  >
+					    <source src="assets/videos/video4_edit - no audio - compressed.mp4" type="video/mp4"/>
+					    <p class="vjs-no-js">
+					      To view this video please enable JavaScript, and consider upgrading to a
+					      web browser that
+					      <a href="https://videojs.com/html5-video-support/" target="_blank"
+					        >supports HTML5 video</a
+					      >
+					    </p>
+					  </video>
+
+			  		<script src="https://vjs.zencdn.net/8.6.0/video.min.js"></script>
+
+
+					  <script type="text/javascript">
+					  	const player = videojs('my-video');
+
+				      // Hide the progress control from the control bar
+
+						  player.ready(function() {
+							  player.muted(true);
+							  player.userActive(false)
+				      	// player.fluid(true);
+				      	// player.fill(true);
+				      	// player.responsive(true);
+				      	// player.controlBar.progressControl.hide();
+							});
+					  </script>
+
+			  <!-- Video END -->
+
 				<!-- <img id="video-poster-img" class="back-video" src="assets/frames/frame01.png"> -->
 				<div class="content">
 					<h1 id="Title">شهيوات الحاجة زهرة</h1>
@@ -288,8 +336,10 @@
 
 		<!-- ----------- space ----------- -->
 
-			<div style="margin: 50px 0"></div>
+			<div style="margin: 300px 0"></div>
 		<!-- ----------- space END ----------- -->
+
+		<!--  maybe have an image slideshow here or some other video -->
 
 	</div>	
 
@@ -439,7 +489,7 @@
 
 				// if(img!=null)
 				// {
-		// 
+			// 
 					// if(img.complete && img.naturalHeight !== 0 && !stop)
 					// {
 						// if(video!=null)
@@ -460,37 +510,37 @@
 					// }
 				// }
 
-			let _update = setInterval(function () {
+			// let _update = setInterval(function () {
 
-				var video = document.getElementsByTagName('video')[0];
-				// var img = document.getElementById('video-poster-img');
+			// 	var video = document.getElementsByTagName('video')[0];
+			// 	// var img = document.getElementById('video-poster-img');
 
-				if(video!=null)
-				{
-					// if(video.readyState !== 0) // the video got some info
-					// {
-					// 	var loadedPercentage = video.buffered.end(0) / video.duration;
-					// 	console.log(loadedPercentage);
-					// }
+			// 	if(video!=null)
+			// 	{
+			// 		// if(video.readyState !== 0) // the video got some info
+			// 		// {
+			// 		// 	var loadedPercentage = video.buffered.end(0) / video.duration;
+			// 		// 	console.log(loadedPercentage);
+			// 		// }
 
-					if(video.readyState === 4 
-						// && document.getElementsByClassName('loader').length!=0
-						)
-					{
+			// 		if(video.readyState === 4 
+			// 			// && document.getElementsByClassName('loader').length!=0
+			// 			)
+			// 		{
 
-							video.load();
-							video.play();
-						// img.hidden = true;
-						// video.hidden = false;
-						clearInterval(_update);
-						// img.style.display = "none";
-						// document.getElementsByClassName('loader')[0].style.display = "none";
-						// document.getElementsByClassName('cover')[0].style.opacity = "0";
-						// document.body.removeChild(document.getElementsByClassName('cover')[0]);
-					}
-				}
+			// 				video.load();
+			// 				video.play();
+			// 			// img.hidden = true;
+			// 			// video.hidden = false;
+			// 			clearInterval(_update);
+			// 			// img.style.display = "none";
+			// 			// document.getElementsByClassName('loader')[0].style.display = "none";
+			// 			// document.getElementsByClassName('cover')[0].style.opacity = "0";
+			// 			// document.body.removeChild(document.getElementsByClassName('cover')[0]);
+			// 		}
+			// 	}
 
-			}, 100);
+			// }, 100);
 
 			document.getElementById("social-links").style.marginTop = "-"+(parseInt(getComputedStyle(document.getElementById("fb-icon")).marginBottom)+parseInt(document.getElementById("fb-icon").offsetHeight))+"px";
 
