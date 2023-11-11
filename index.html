@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-	<link href="https://vjs.zencdn.net/8.6.0/video-js.css" rel="stylesheet" />
+	<!-- <link href="https://vjs.zencdn.net/8.6.0/video-js.css" rel="stylesheet" /> -->
 
 	<link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/colors.css">
@@ -25,19 +25,20 @@
 
    <link rel="shortcut icon" type="image/x-icon" href="assets/icon.ico?">
 
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="javascript/main.js"></script>
 
 	<title>شهيوات الحاجة زهرة</title>
 </head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q35492K8WM"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q35492K8WM"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-Q35492K8WM');
-</script>
+</script> -->
 <body>
 
 	<!-- <div class="cover">
@@ -52,7 +53,7 @@
 				<nav>
 					<ul id="MenuItems">
 						<li><a href="#">Accueil</a></li>
-						<li><a href="Products">Produits</a></li>
+						<li><a href="Menu">Notre Menu</a></li>
 						<!-- <li><a href="#">Nouveautés</a></li> -->
 						<!-- <li><a href="#">Promotions</a></li> -->
 						<!-- <li><a href="#">Meilleures ventes</a></li> -->
@@ -72,11 +73,12 @@
 
 				<!-- Video START -->
 
-						<!-- <video autoplay loop muted plays-inline playsinline preload="auto" class="back-video"> -->
+						<video autoplay loop muted plays-inline playsinline preload="auto" class="back-video">
 							<!-- <source src="assets/videos/video4_edit - no audio - compressed.mp4" type="video/mp4"> -->
-						<!-- </video> -->
+							<source src="assets/videos/video.mp4" type="video/mp4">
+						</video>
 
-						<video
+						<!-- <video
 					    id="my-video"
 					    class="video-js back-video"
 					    controls="false"
@@ -88,21 +90,21 @@
 					    playsinline="true"
 
 					    style="object-fit: cover; width: inherit; height: inherit;"
-					  >
-					    <source src="assets/videos/video4_edit - no audio - compressed.mp4" type="video/mp4"/>
-					    <p class="vjs-no-js">
+					  > -->
+					    <!-- <source src="assets/videos/video4_edit - no audio - compressed.mp4" type="video/mp4"/> -->
+					    <!-- <p class="vjs-no-js">
 					      To view this video please enable JavaScript, and consider upgrading to a
 					      web browser that
 					      <a href="https://videojs.com/html5-video-support/" target="_blank"
 					        >supports HTML5 video</a
 					      >
-					    </p>
-					  </video>
+					    </p> -->
+					  <!-- </video> -->
 
-			  		<script src="https://vjs.zencdn.net/8.6.0/video.min.js"></script>
+			  		<!-- <script src="https://vjs.zencdn.net/8.6.0/video.min.js"></script> -->
 
 
-					  <script type="text/javascript">
+					  <!-- <script type="text/javascript">
 					  	const player = videojs('my-video');
 
 							// videojs('my-video', {autoplay: true});
@@ -119,7 +121,7 @@
 				      	// player.responsive(true);
 				      	// player.controlBar.progressControl.hide();
 							});
-					  </script>
+					  </script> -->
 
 			  <!-- Video END -->
 
@@ -170,60 +172,63 @@
 
 		<!-- ----------- collections photos ----------- -->
 
-			<div class="main-page-categories-small-container">
-				<h2 class="main-page-categories-title">Notre Collection</h2>
+			<h2 class="main-page-categories-title">Notre Collection</h2>
 
-				<!-- ----------- image slider ----------- -->
-					<div class="img-slider-container">
-						<div class="img-slider-slider">
-							<div class="img-slider-slides">
-								<input type="radio" name="img-slider-slides-radio-btn" id="img-slider-slides-radio-1">
-								<input type="radio" name="img-slider-slides-radio-btn" id="img-slider-slides-radio-2">
-								<input type="radio" name="img-slider-slides-radio-btn" id="img-slider-slides-radio-3">
-								<input type="radio" name="img-slider-slides-radio-btn" id="img-slider-slides-radio-4">
-							
-								<div class="img-slider-slides-slide img-slider-slides-first-slide">
-									<a href="../Product?id=01">
-										<img src="../assets/food/insta/00001.jpg">
-									</a>
-								</div>
+			<!-- the main-page-categories-small-container's max-width disturbs the slider -->
 
-								<div class="img-slider-slides-slide">
-									<a href="../Product?id=02">
-										<img src="../assets/food/insta/00002.jpg">
-									</a>
-								</div>
-
-								<div class="img-slider-slides-slide">
-									<a href="../Product?id=03">
-										<img src="../assets/food/insta/00003.jpg">
-									</a>
-								</div>
-
-								<div class="img-slider-slides-slide">
-									<a href="../Product?id=04">
-										<img src="../assets/food/insta/00004.jpg">
-									</a>
-								</div>
-
-								<div class="img-slider-slides-auto-navigation">
-									<div class="img-slider-slides-auto-navigation-btn1"></div>
-									<div class="img-slider-slides-auto-navigation-btn2"></div>
-									<div class="img-slider-slides-auto-navigation-btn3"></div>
-									<div class="img-slider-slides-auto-navigation-btn4"></div>
-								</div>
-
+			<!-- ----------- image slider ----------- -->
+				<div class="img-slider-container">
+					<div class="img-slider-slider">
+						<div class="img-slider-slides">
+							<input type="radio" name="img-slider-slides-radio-btn" id="img-slider-slides-radio-1">
+							<input type="radio" name="img-slider-slides-radio-btn" id="img-slider-slides-radio-2">
+							<input type="radio" name="img-slider-slides-radio-btn" id="img-slider-slides-radio-3">
+							<input type="radio" name="img-slider-slides-radio-btn" id="img-slider-slides-radio-4">
+						
+							<div class="img-slider-slides-slide img-slider-slides-first-slide">
+								<a href="../Product?id=01">
+									<img src="../assets/food/insta/00001.jpg">
+								</a>
 							</div>
 
-							<div class="img-slider-slider-manual-navigation">
-								<label for="img-slider-slides-radio-1" class="img-slider-slider-manual-navigation-btn"></label>
-								<label for="img-slider-slides-radio-2" class="img-slider-slider-manual-navigation-btn"></label>
-								<label for="img-slider-slides-radio-3" class="img-slider-slider-manual-navigation-btn"></label>
-								<label for="img-slider-slides-radio-4" class="img-slider-slider-manual-navigation-btn"></label>
+							<div class="img-slider-slides-slide">
+								<a href="../Product?id=02">
+									<img src="../assets/food/insta/00002.jpg">
+								</a>
 							</div>
+
+							<div class="img-slider-slides-slide">
+								<a href="../Product?id=03">
+									<img src="../assets/food/insta/00003.jpg">
+								</a>
+							</div>
+
+							<div class="img-slider-slides-slide">
+								<a href="../Product?id=04">
+									<img src="../assets/food/insta/00004.jpg">
+								</a>
+							</div>
+
+							<div class="img-slider-slides-auto-navigation">
+								<div class="img-slider-slides-auto-navigation-btn1"></div>
+								<div class="img-slider-slides-auto-navigation-btn2"></div>
+								<div class="img-slider-slides-auto-navigation-btn3"></div>
+								<div class="img-slider-slides-auto-navigation-btn4"></div>
+							</div>
+
+						</div>
+
+						<div class="img-slider-slider-manual-navigation">
+							<label for="img-slider-slides-radio-1" class="img-slider-slider-manual-navigation-btn"></label>
+							<label for="img-slider-slides-radio-2" class="img-slider-slider-manual-navigation-btn"></label>
+							<label for="img-slider-slides-radio-3" class="img-slider-slider-manual-navigation-btn"></label>
+							<label for="img-slider-slides-radio-4" class="img-slider-slider-manual-navigation-btn"></label>
 						</div>
 					</div>
-				<!-- ----------- image slider END ----------- -->
+				</div>
+			<!-- ----------- image slider END ----------- -->
+
+			<div class="main-page-categories-small-container">
 
 				<!-- ----------- space ----------- -->
 
@@ -231,118 +236,19 @@
 				<!-- ----------- space END ----------- -->
 
 
-				<div class="main-page-categories-row">
-
-					<div class="main-page-categories-col-4" id="06" style="flex-basis: 25%;">
-						<a href="../Product?id=06">
-							<div>
-								<img src="../assets/temp/snacks.jpg">
-							</div>
-							<!-- <h4 class="product-text">produit 06</h4> -->
-						</a>
-					</div>
-
-					<div class="main-page-categories-col-4" id="12" style="flex-basis: 25%;">
-						<a href="../Product?id=12">
-							<div>
-								<img src="../assets/temp/new.jpg">
-							</div>
-							<!-- <h4 class="product-text">produit 12</h4> -->
-						</a>
-					</div>
-					<div class="main-page-categories-col-4" id="10" style="flex-basis: 50%;">
-						<a href="../Product?id=10">
-							<div>
-								<img src="../assets/temp/pickles.jpg">
-							</div>
-							<!-- <h4 class="product-text">produit 10</h4> -->
-						</a>
-					</div>
-					<!-- <div class="main-page-categories-col-4" id="09">
-						<a href="../Product?id=09">
-							<div>
-								<img src="../assets/food/insta/00009.jpg">
-							</div>
-						</a>
-					</div>
-				</div> -->
-
-				<div class="main-page-categories-row">
-
-					<div class="main-page-categories-col-4" id="06" style="flex-basis: 33%;">
-						<a href="../Product?id=06">
-							<div>
-								<img src="../assets/temp/grocery.jpg">
-							</div>
-							<!-- <h4 class="product-text">produit 06</h4> -->
-						</a>
-					</div>
-
-					<div class="main-page-categories-col-4" id="12" style="flex-basis: 33%;">
-						<a href="../Product?id=12">
-							<div>
-								<img src="../assets/temp/bakery.jpg">
-							</div>
-							<!-- <h4 class="product-text">produit 12</h4> -->
-						</a>
-					</div>
-					<div class="main-page-categories-col-4" id="10" style="flex-basis: 33%;">
-						<a href="../Product?id=10">
-							<div>
-								<img src="../assets/temp/sweets.jpg">
-							</div>
-							<!-- <h4 class="product-text">produit 10</h4> -->
-						</a>
-					</div>
-					<!-- <div class="main-page-categories-col-4" id="09">
-						<a href="../Product?id=09">
-							<div>
-								<img src="../assets/food/insta/00009.jpg">
-							</div>
-						</a>
-					</div> -->
-				</div>
-			</div>
 		<!-- ----------- collection photos END ----------- -->
 
-		<!-- ----------- space ----------- -->
+		<!-- ----------- Space START ----------- -->
 
 			<div style="margin: 50px 0"></div>
-		<!-- ----------- space END ----------- -->
 
-		<!-- ---------------- single product details ---------------- -->
+		<!-- ----------- Space END ----------- -->
 
-			<div class="main-page-product" style="padding-bottom: 20px;">
-				<a href="">
-					<div class="main-page-product-img">
-						<img src="">
-					</div>
-					<h4></h4>
-				</a>
-			</div>
+		<!-- Space START -->
 
-			<div style="text-align: center;display:block;margin-left:auto;margin-right:auto;">
-				<a onclick='window.open("https://api.whatsapp.com/send?phone=212655040173&text=https://chhiwatelhajazehra.github.io/Product?id=01", "_self")' class="add-to-cart-btn">Commander</a>
-			</div>
+			<!-- <div style="margin: 300px 0"></div> -->
 
-			<div class="main-page-product" style="padding-bottom: 20px;">
-				<a href="">
-					<div class="main-page-product-img">
-						<img src="">
-					</div>
-					<h4></h4>
-				</a>
-			</div>
-
-			<div style="text-align: center;display:block;margin-left:auto;margin-right:auto;">
-				<a onclick='window.open("https://api.whatsapp.com/send?phone=212655040173&text=https://chhiwatelhajazehra.github.io/Product?id=02", "_self")' class="add-to-cart-btn">Commander</a>
-			</div>
-		<!-- ---------------- single product details END ---------------- -->
-
-		<!-- ----------- space ----------- -->
-
-			<div style="margin: 300px 0"></div>
-		<!-- ----------- space END ----------- -->
+		<!-- Space END -->
 
 		<!--  maybe have an image slideshow here or some other video -->
 
@@ -695,25 +601,26 @@
 				}
 			}
 
-			if(document.fullscreenEnabled)
-			{
+			// if(document.fullscreenEnabled)
+			// {
 				// hide scrollbar
-			}
+			// }
 
 
-			const __url = location.protocol + '//' + location.host;
+			// lastly commented
+						// const __url = location.protocol + '//' + location.host;
 
-			let curr_product = products[0];
-			var _href = document.getElementsByClassName('main-page-product')[0].children[0];
-			_href.href = __url+"/Product"+"?"+"id="+curr_product.id;
-			_href.children[1].innerText = curr_product.name; // h4 : product name
-			_href.children[0].children[0].src = curr_product.img_src;
+						// let curr_product = products[0];
+						// var _href = document.getElementsByClassName('main-page-product')[0].children[0];
+						// _href.href = __url+"/Product"+"?"+"id="+curr_product.id;
+						// _href.children[1].innerText = curr_product.name; // h4 : product name
+						// _href.children[0].children[0].src = curr_product.img_src;
 
-			curr_product = products[1];
-			_href = document.getElementsByClassName('main-page-product')[1].children[0];
-			_href.href = __url+"/Product"+"?"+"id="+curr_product.id;
-			_href.children[1].innerText = curr_product.name; // h4 : product name
-			_href.children[0].children[0].src = curr_product.img_src;
+						// curr_product = products[1];
+						// _href = document.getElementsByClassName('main-page-product')[1].children[0];
+						// _href.href = __url+"/Product"+"?"+"id="+curr_product.id;
+						// _href.children[1].innerText = curr_product.name; // h4 : product name
+						// _href.children[0].children[0].src = curr_product.img_src;
 			
 			// var _row2 = _row.children[0].children[1];
 
@@ -751,36 +658,11 @@
 		</script>
 	<!-- ------------------------ js for toggle menu & more END ---------------------- -->
 
-	<!-- ----------- image slider script ----------- -->
+	<!-- JS START -->
 
-		<script type="text/javascript">
-			var r = document.querySelector(':root');
-			
-			var counter=1;
-			document.getElementById('img-slider-slides-radio-'+counter).checked = true;
-			counter++;
+		<script src="javascript/home.js"></script>
 
-			setInterval(function()
-			{
-				// document.getElementById('img-slider-slides-radio-'+counter).checked = true;
-				// document.getElementById('img-slider-slides-radio-'+counter).style.backgroundColor="#40D4DC";
-				// r.style.getPropertyValue('--clr-one');
-
-				for(let i=1; i<5; i++)
-				{
-					if(document.getElementById('img-slider-slides-radio-'+i).checked)
-					{
-						document.getElementById('img-slider-slides-radio-'+i).checked=false;
-						document.getElementById('img-slider-slides-radio-'+( i==4?1:i+1 )).checked=true;
-						counter= i==4?1:i+1;
-						return;
-					}
-				}
-
-			}, 5000);
-		</script>
-
-	<!-- ----------- image slider script end ----------- -->
+	<!-- JS END -->
 
 </body>
 </html>
