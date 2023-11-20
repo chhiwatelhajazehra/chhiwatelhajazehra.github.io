@@ -1,0 +1,222 @@
+/* Product Details START */
+
+	.col-2 img
+	{
+		width: 100%;
+	}
+
+	.product
+	{
+		margin-top: 80px;
+	}
+
+	.product .col-2 img
+	{
+		padding: 0;
+	}
+
+	.product .col-2
+	{
+		padding: 20px;
+	}
+
+	.product .col-2 h4
+	{
+		margin: 20px 0;
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	.product .col-2 select
+	{
+		display: block;
+		padding: 10px;
+		margin-top: 20px;
+	}
+
+	.product input
+	{
+		width: 50px;
+		height: 40px;
+		padding-left: 10px;
+		font-size: 20px;
+		margin-right: 10px;
+		border: 1px solid var(--red1);
+	}
+
+	.product input:focus
+	{
+		outline: none;
+	}
+
+	.product i
+	{
+		color: var(--red1);
+		margin-left: 10px;
+	}
+
+	.small-img-col img
+	{
+		width: 100%;
+	}
+
+	.small-img-row
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.small-img-col
+	{
+		flex-basis: 24%;
+		cursor: pointer;
+	}
+
+/* Product Details END */
+
+/* Products START */
+
+	h4
+	{
+		color: var(--grey1);
+		font-weight: normal;
+	}
+
+/* Products END */
+
+/* Cart START */
+
+	.cart
+	{
+		margin: 80px auto;
+	}
+
+	table
+	{
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	.cart-info
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	th
+	{
+		text-align: left;
+		padding: 5px;
+		color: #fff;
+		background: var(--red1);
+		font-weight: normal;
+	}
+
+	td
+	{
+		padding: 10px 5px;
+	}
+
+	td input
+	{
+		width: 40px;
+		height: 30px;
+		padding: 5px;
+	}
+
+	td a
+	{
+		color: var(--red1);
+		font-size: 12px;
+	}
+
+	td img
+	{
+		width: 80px;
+		height: 80px;
+		margin-right: 10px;
+	}
+
+	.total-price
+	{
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.total-price table
+	{
+		border-top: 3px solid var(--red1);
+		width: 100%;
+		max-width: 400px;
+	}
+
+	td:last-child
+	{
+		text-align: right;
+	}
+
+	th:last-child
+	{
+		text-align: right;
+	}
+
+/* Cart END */
+
+/* Media Query START */
+
+	/* Menu START */
+
+		@media only screen and (max-width: 800px)
+		{
+			nav ul
+			{
+				position: absolute;
+				top: 70px;
+				left: 0;
+				background: var(--grey6);
+				width: 100%;
+				overflow: hidden;
+				transition: max-height 0.5s;
+			}
+
+			nav ul li
+			{
+				display: block;
+				margin-right: 50px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			nav ul li a
+			{
+				color: #fff;
+			}
+		}
+
+	/* Menu END */
+
+	@media only screen and (max-width: 600px)
+	{
+		.product .row
+		{
+			text-align: left;
+		}
+
+		.product .col-2
+		{
+			padding: 20px 0;
+		}
+
+		.product h1
+		{
+			font-size: 26px;
+			line-height: 32px;
+		}
+
+		.cart-info p
+		{
+			display: none;
+		}
+	}
+
+/* Media Query END */

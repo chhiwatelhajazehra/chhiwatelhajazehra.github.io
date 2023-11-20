@@ -1,5 +1,16 @@
 :root
 {
+  --grey1: #555;
+  --grey2: #563434;
+  --grey3: #777;
+  --grey4: #8a8a8a;
+  --grey5: #b5b5b5;
+  --grey6: #333;
+  --grey7: #ccc;
+
+  --red1: #ff523b;
+  --red2: #ffd6d6;
+
   --the-red: #FF0000;
   --light-red: #f03b3b;
 

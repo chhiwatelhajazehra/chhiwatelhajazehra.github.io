@@ -3,32 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-	<!-- <link href="https://vjs.zencdn.net/8.6.0/video-js.css" rel="stylesheet" /> -->
-
-	<link rel="stylesheet" href="styles/fonts.css">
-  <link rel="stylesheet" href="styles/colors.css">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/style.css">
-	<link rel="stylesheet" href="styles/logo.css">
-	<link rel="stylesheet" href="styles/menu-icon.css">
-	<link rel="stylesheet" href="styles/footer.css">
-	<link rel="stylesheet" href="styles/scroll_bar.css">
-	<link rel="stylesheet" href="styles/content.css">
-	<link rel="stylesheet" href="styles/explorebtn.css">
-	<link rel="stylesheet" href="styles/widgets.css">
-	<link rel="stylesheet" href="styles/main-page-product.css">
-	<link rel="stylesheet" href="styles/main-page-categories.css">
-  <link rel="stylesheet" href="styles/image-slider.css">
-
-   <link rel="shortcut icon" type="image/x-icon" href="assets/icon.ico?">
+	<title>شهيوات الحاجة زهرة</title>
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-	<script src="javascript/main.js"></script>
 
-	<title>شهيوات الحاجة زهرة</title>
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="styles/colors.css">
+	<link rel="stylesheet" type="text/css" href="styles/fonts.css">
+	<link rel="stylesheet" type="text/css" href="styles/logo.css">
+	<link rel="stylesheet" type="text/css" href="styles/widgets.css">
+	<link rel="stylesheet" type="text/css" href="styles/image-slider.css">
+	<link rel="stylesheet" type="text/css" href="styles/scroll_bar.css">
+	<link rel="stylesheet" type="text/css" href="styles/explorebtn.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/home.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="assets/icon.ico?">
+
 </head>
 <!-- Google tag (gtag.js) -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q35492K8WM"></script>
@@ -40,143 +35,86 @@
   gtag('config', 'G-Q35492K8WM');
 </script> -->
 <body>
-
-	<!-- <div class="cover">
-		<p class="text-logo">شهيوات الحاجة زهرة</p>
-		<div class="loader"></div>
-	</div> -->
-
-	<div class="header">
-		<div class="container">
-			<div class="home-page-navbar">
-				<p class="text-logo" onclick='OpenLink("main", "_self")'>شهيوات الحاجة زهرة</p>
 				<nav>
-					<ul id="MenuItems">
-						<li><a href="#">Accueil</a></li>
-						<li><a href="Menu">Notre Menu</a></li>
-						<!-- <li><a href="#">Nouveautés</a></li> -->
-						<!-- <li><a href="#">Promotions</a></li> -->
-						<!-- <li><a href="#">Meilleures ventes</a></li> -->
-						<li><a href="#">À propos</a></li>
-					</ul>
+					<a href="/" class="text-logo"><h1>شهيوات الحاجة زهرة</h1></a>
+					<div class="navigation">
+						<ul>
+							<i id="close-menu-btn" class="fa fa-times"></i>
+							<li><a id="active-nav-link" href="/">Accueil</a></li>
+							<li><a id="nav-link" href="/Menu">Notre Menu</a></li>
+							<li><a id="nav-link" href="">À propos</a></li>
+
+						</ul>
+						<img id="menu-btn" src="assets/images/menu.png">
+					</div>
 				</nav>
-				<!-- <img src="assets/cart.png" width="30px" height="30px"> -->
-				<div class="menu-icon" onclick="menutoggle()">
-					<div class="menu-icon-bar" id="top-menu-icon-bar"></div>
-					<div class="menu-icon-bar" id="mid-menu-icon-bar"></div>
-					<div class="menu-icon-bar" id="bot-menu-icon-bar"></div>
+
+	<!-- Header START -->
+
+		<div class="home-header">
+			<div class="container">
+
+
+				<div class="hero">
+					<video autoplay loop muted plays-inline playsinline preload="auto" class="back-video">
+						<source src="assets/videos/video.mp4" type="video/mp4">
+					</video>
+					<div class="content">
+						<h1 id="Title">شهيوات الحاجة زهرة</h1>
+						<div class="explorebtn"><button type="button" onclick="window.open('/Menu')"><spanB></spanB>Commander</button></div>
+					</div>
 				</div>
-			</div>
 
+				<div class="social-links elements-over-video" id="social-links">
+					<p class="text-over-video copyright" id="text-over-video">©2023 شهيوات الحاجة زهرة.</p>
 
-			<div class="hero">
-
-				<!-- Video START -->
-
-						<video autoplay loop muted plays-inline playsinline preload="auto" class="back-video">
-							<!-- <source src="assets/videos/video4_edit - no audio - compressed.mp4" type="video/mp4"> -->
-							<source src="assets/videos/video.mp4" type="video/mp4">
-						</video>
-
-						<!-- <video
-					    id="my-video"
-					    class="video-js back-video"
-					    controls="false"
-					    preload="auto"
-					    data-setup="{}"
-					    muted="true"
-					    autoplay="true"
-					    loop="true"
-					    playsinline="true"
-
-					    style="object-fit: cover; width: inherit; height: inherit;"
-					  > -->
-					    <!-- <source src="assets/videos/video4_edit - no audio - compressed.mp4" type="video/mp4"/> -->
-					    <!-- <p class="vjs-no-js">
-					      To view this video please enable JavaScript, and consider upgrading to a
-					      web browser that
-					      <a href="https://videojs.com/html5-video-support/" target="_blank"
-					        >supports HTML5 video</a
-					      >
-					    </p> -->
-					  <!-- </video> -->
-
-			  		<!-- <script src="https://vjs.zencdn.net/8.6.0/video.min.js"></script> -->
-
-
-					  <!-- <script type="text/javascript">
-					  	const player = videojs('my-video');
-
-							// videojs('my-video', {autoplay: true});
-
-				      // Hide the progress control from the control bar
-
-						  player.ready(function() {
-							  player.muted(true);
-							  player.userActive(false)
-								// videojs('my-video', {autoplay: true});
-								player.autoplay();
-				      	// player.fluid(true);
-				      	// player.fill(true);
-				      	// player.responsive(true);
-				      	// player.controlBar.progressControl.hide();
-							});
-					  </script> -->
-
-			  <!-- Video END -->
-
-				<!-- <img id="video-poster-img" class="back-video" src="assets/frames/frame01.png"> -->
-				<div class="content">
-					<h1 id="Title">شهيوات الحاجة زهرة</h1>
-					<div class="explorebtn"><button type="button" onclick='OpenLink("ex", "_self")'><spanB></spanB>Commander</button></div>
+					<a class="icon-over-video" href="https://www.instagram.com/chhiwat_el_haja_zehra/" id="ig-icon"><span class="fa fa-instagram"></span></a>
+					<!-- https://fontawesome.com/icons/instagram?f=brands&s=solid -->
+					<a class="icon-over-video" href="https://web.facebook.com/mimix.dogrie.6" id="fb-icon"><span class="fa fa-facebook-f"></span></a>
+					<a class="icon-over-video" href="https://api.whatsapp.com/send?phone=212655040173" id="wa-icon"><span class="fa fa-whatsapp"></span></a>
 				</div>
-			</div>
 
-			<div class="social-links elements-over-video" id="social-links">
-				<p class="text-over-video copyright" id="text-over-video">©2023 شهيوات الحاجة زهرة.</p>
-
-				<a class="icon-over-video" onclick='OpenLink("ig", "_blank")' id="ig-icon"><span class="fa fa-instagram"></span></a>
-				<!-- https://fontawesome.com/icons/instagram?f=brands&s=solid -->
-				<a class="icon-over-video" onclick='OpenLink("fb", "_blank")' id="fb-icon"><span class="fa fa-facebook-f"></span></a>
-				<a class="icon-over-video" onclick='OpenLink("wa", "_self")' id="wa-icon"><span class="fa fa-whatsapp"></span></a>
-
-			</div>
-
-			<div class="sm-widget">
-			    <a onclick='OpenLink("wa", "_self")' class="sm-link" title="Whatsapp">
+				<div class="sm-widget">
+			    <a href="https://api.whatsapp.com/send?phone=212655040173" class="sm-link" title="Whatsapp">
 			    	<span class="fa fa-whatsapp"></span>
 			    </a>
+				</div>
+
 			</div>
-
-			<!-- <div class="sm-widget fb-widget sm-widget-right">
-			    <a onclick='OpenLink("fb", "_self")' class="sm-link fb-link sm-link-right" title="Facebook">
-			    	<span class="fa fa-facebook-f"></span>
-			    </a>
-			</div>
-
-			<div class="sm-widget ig-widget sm-widget-right">
-			    <a onclick='OpenLink("ig", "_self")' class="sm-link fb-link sm-link-right" title="Instagram">
-			    	<span class="fa fa-instagram"></span>
-			    </a>
-			</div> -->
-
 		</div>
-	</div>
 
-	<div class="other">
+	<!-- Header END -->
 
-		<!-- ----------- space ----------- -->
+	<!-- Featured Categories START -->
 
-			<div style="margin: 50px 0"></div>
-		<!-- ----------- space END ----------- -->
+		<!-- <div class="categories">
+			<div class="small-container">
+				<div class="row">
+					<div class="col-3">
+						<img src="assets/images/category-1.jpg">
+					</div>
+					<div class="col-3">
+						<img src="assets/images/category-2.jpg">
+					</div>
+					<div class="col-3">
+						<img src="assets/images/category-3.jpg">
+					</div>
+				</div>
+			</div>
+		</div> -->
 
-		<!-- ----------- collections photos ----------- -->
+	<!-- Featured Categories END -->
 
-			<h2 class="main-page-categories-title">Notre Collection</h2>
+	<!-- other -->
 
-			<!-- the main-page-categories-small-container's max-width disturbs the slider -->
+<div class="other">
 
-			<!-- ----------- image slider ----------- -->
+	<!-- stuffs -->
+
+		<div style="margin: 55px"></div>
+
+		<h2 class="title">Notre Collection</h2>
+
 				<div class="img-slider-container">
 					<div class="img-slider-slider">
 						<div class="img-slider-slides">
@@ -187,25 +125,25 @@
 						
 							<div class="img-slider-slides-slide img-slider-slides-first-slide">
 								<a href="../Product?id=01">
-									<img src="../assets/food/insta/00001.jpg">
+									<img src="../assets/images/008.jpeg">
 								</a>
 							</div>
 
 							<div class="img-slider-slides-slide">
 								<a href="../Product?id=02">
-									<img src="../assets/food/insta/00002.jpg">
+									<img src="../assets/images/001.jpeg">
 								</a>
 							</div>
 
 							<div class="img-slider-slides-slide">
 								<a href="../Product?id=03">
-									<img src="../assets/food/insta/00003.jpg">
+									<img src="../assets/images/005.jpeg">
 								</a>
 							</div>
 
 							<div class="img-slider-slides-slide">
 								<a href="../Product?id=04">
-									<img src="../assets/food/insta/00004.jpg">
+									<img src="../assets/images/006.jpeg">
 								</a>
 							</div>
 
@@ -226,35 +164,219 @@
 						</div>
 					</div>
 				</div>
-			<!-- ----------- image slider END ----------- -->
-
-			<div class="main-page-categories-small-container">
-
-				<!-- ----------- space ----------- -->
-
-					<div style="margin: 150px 0"></div>
-				<!-- ----------- space END ----------- -->
 
 
-		<!-- ----------- collection photos END ----------- -->
+		<div style="margin: 50px 0"></div>
 
-		<!-- ----------- Space START ----------- -->
+	<!--  -->
 
-			<div style="margin: 50px 0"></div>
+	<!-- Featured Products START -->
 
-		<!-- ----------- Space END ----------- -->
+		<div class="small-container">
 
-		<!-- Space START -->
+			<h2 class="title">Notre Menu</h2>
+			
+			<div class="row">
+				<div class="col-4">
+					<img src="../assets/images/001.jpeg">
+				</div>
 
-			<!-- <div style="margin: 300px 0"></div> -->
+				<div class="col-4">
+					<img src="../assets/images/002.jpeg">
+				</div>
 
-		<!-- Space END -->
+				<div class="col-4">
+					<img src="../assets/images/005.jpeg">
+				</div>
 
-		<!--  maybe have an image slideshow here or some other video -->
+				<div class="col-4">
+					<img src="../assets/images/006.jpeg">
+				</div>
 
-	</div>	
+				<div class="col-4">
+					<img src="../assets/images/007.jpeg">
+				</div>
 
-	<!-- ---------------- footer --------------- -->
+				<div class="col-4">
+					<img src="../assets/images/008.jpeg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00001.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00002.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00004.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00006.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00009.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00010.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00012.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00013.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00015.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00016.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00018.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00019.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00020.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00021.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00022.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00023.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00024.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00025.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00026.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00027.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00028.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00030.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00031.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00032_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00033.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00034.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00035_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00038_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00039.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00040_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/insta/00041_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/others/001_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/others/002_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/others/003.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/others/004.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/others/005_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/others/006_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/others/007_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/others/008_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/others/009_1.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/others/010.jpg">
+				</div>
+
+				<div class="col-4">
+					<img src="../assets/food/others/011_1.jpg">
+				</div>
+			</div>
+
+		</div>
+
+	<!-- Featured Products END -->
+
+</div>
+
+	<!-- Footer START -->
 
 		<footer class="footer">
 			<div class="footer-container" style="max-width: 700px;">
@@ -265,58 +387,27 @@
 							<li><a href="#">À propos</a></li>
 							<li><a href="#">Nos Services</a></li>
 							<li><a href="#">Options de Paiement</a></li>
-							<!-- <li><a href="#">Privacy Policy</a></li> -->
-							<!-- <li><a href="#">Affiliate Program</a></li> -->
 						</ul>
 					</div>
 
 					<div class="footer-col">
 						<h4>Support</h4>
 						<ul>
-							<!-- <li><a href="#">FAQ</a></li> -->
 							<li><a href="#">Livraison</a></li>
 							<li><a href="#">Retours</a></li>
 							<li><a href="#">Statut de la Commande</a></li>
 						</ul>
 					</div>
 
-					<!-- <div class="footer-col">
-						<h4>Online Shop</h4>
-						<ul>
-							<li><a href="#">Watch</a></li>
-							<li><a href="#">Bags</a></li>
-							<li><a href="#">Shoes</a></li>
-							<li><a href="#">Dress</a>
-						</ul>
-					</div> -->
-
-					<!-- https://glovoapp.com/ in french  -->
-					<!-- <div class="footer-col">
-						<h4>Liens utiles</h4>
-						<ul>
-						</ul>
-					</div> -->
-
 					<div class="footer-col">
-						<!-- <h4>Nous suivre</h4> -->
 						<h4>Nous contacter</h4>
 						<ul>
 							<div class="social-links">
 
-								<a onclick='OpenLink("wa", "_self")' id="wa-icon"><span class="fa fa-whatsapp"></span></a>
-								<a onclick='OpenLink("fb", "_blank")' id="fb-icon"><span class="fa fa-facebook-f"></span></a>
-								<a onclick='OpenLink("ig", "_blank")' id="ig-icon"><span class="fa fa-instagram"></span></a>
+								<a href="https://api.whatsapp.com/send?phone=212655040173" id="wa-icon"><span class="fa fa-whatsapp"></span></a>
+								<a href="https://web.facebook.com/mimix.dogrie.6" id="fb-icon"><span class="fa fa-facebook-f"></span></a>
+								<a href="https://www.instagram.com/chhiwat_el_haja_zehra/" id="ig-icon"><span class="fa fa-instagram"></span></a>
 
-								<!-- <a target="_blank" href="#" id="tw-icon"><span class="fa fa-twitter"></span></a> -->
-								<!-- <a target="_blank" href="#" id="li-icon"><span class="fa fa-linkedin"></span></a> -->
-
-								<!-- <a target="_blank" href="#" id="ig-icon">
-									<div class="ig-icon-bg">
-										<div class="ig-icon-inner">
-									    	<span class="fa fa-instagram"></span>
-										</div>
-									</div>
-								</a> -->
 							</div>
 						</ul>
 					</div>
@@ -328,37 +419,19 @@
 			<div class="container">
 				<hr>
 
-				<!-- <br> -->
-
 				<div class="footer-container">
 					<div class="footer-row">
 						<div class="footer-col" style="margin-bottom: 5px;">
-							<!-- <h4>Follow Us</h4> -->
 							<div class="social-links">
 
-								<a onclick='OpenLink("wa", "_self")' id="wa-icon"><span class="fa fa-whatsapp"></span></a>
-								<a onclick='OpenLink("fb", "_blank")' id="fb-icon"><span class="fa fa-facebook-f"></span></a>
-								<a onclick='OpenLink("ig", "_blank")' id="ig-icon"><span class="fa fa-instagram"></span></a>
-
-								<!-- <a target="_blank" href="#" id="tw-icon"><span class="fa fa-twitter"></span></a> -->
-								<!-- <a target="_blank" href="#" id="li-icon"><span class="fa fa-linkedin"></span></a> -->
-
-								<!-- <a target="_blank" href="#" id="ig-icon">
-									<div class="ig-icon-bg">
-										<div class="ig-icon-inner">
-									    	<span class="fa fa-instagram"></span>
-										</div>
-									</div>
-								</a> -->
+								<a href="https://api.whatsapp.com/send?phone=212655040173" id="wa-icon"><span class="fa fa-whatsapp"></span></a>
+								<a href="https://web.facebook.com/mimix.dogrie.6" id="fb-icon"><span class="fa fa-facebook-f"></span></a>
+								<a href="https://www.instagram.com/chhiwat_el_haja_zehra/" id="ig-icon"><span class="fa fa-instagram"></span></a>
 
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<!-- <br> -->
-				<!-- <br> -->
-				<!-- <br> -->
 
 				<div style="display: flex;">
 					<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="18px" height="15px" fill="none">
@@ -370,297 +443,13 @@
 
 			</div>
 		</footer>
-	<!-- ---------------- footer END --------------- -->
 
-	<!-- ------------------------ js for toggle menu & more ---------------------- -->
-
-		<script type="text/javascript">
-
-			// var video = document.getElementsByTagName('video')[0];
-			// video.addEventListener("ended", (event) => {
-
-			// 	if(video.getElementsByTagName('source')[0].src.includes("assets/videos/video3_edit2.mp4"))
-			// 	{
-			// 		video.setAttribute('poster', "assets/video4_edit_frame1.png");
-			// 		video.getElementsByTagName('source')[0].src="assets/videos/video4_edit.mp4";
-			// 	}
-			// 	else if(video.getElementsByTagName('source')[0].src.includes("assets/videos/video4_edit.mp4"))
-			// 	{
-			// 		video.setAttribute('poster', "assets/video3_edit2_frame1.png");
-			// 		video.getElementsByTagName('source')[0].src="assets/videos/video3_edit2.mp4";
-			// 	}
-			// 	video.load();
-			// 	video.play();
-
-			// });
-
-			let nums = [];
-
-			// stop=false;
-
-				// if(img!=null)
-				// {
-			// 
-					// if(img.complete && img.naturalHeight !== 0 && !stop)
-					// {
-						// if(video!=null)
-						// {
-							// video.getElementsByTagName('source')[0].src="assets/videos/video3n4.mp4";
-							// video.load();
-							// video.play();
-						// }
-						// var img1 = document.getElementById('cat-img-1');
-						// var img2 = document.getElementById('cat-img-2');
-						// var img3 = document.getElementById('cat-img-3');
-
-						// img1.src="assets/food/yt/001_2.jpg"+"?"+Date.now();
-						// img2.src="assets/food/yt/006_4.jpg"+"?"+Date.now();
-						// img3.src="assets/food/yt/002_4.jpg"+"?"+Date.now();
-						// generateProducts('small-container');
-						// stop=true;
-					// }
-				// }
-
-			// let _update = setInterval(function () {
-
-			// 	var video = document.getElementsByTagName('video')[0];
-			// 	// var img = document.getElementById('video-poster-img');
-
-			// 	if(video!=null)
-			// 	{
-			// 		// if(video.readyState !== 0) // the video got some info
-			// 		// {
-			// 		// 	var loadedPercentage = video.buffered.end(0) / video.duration;
-			// 		// 	console.log(loadedPercentage);
-			// 		// }
-
-			// 		if(video.readyState === 4 
-			// 			// && document.getElementsByClassName('loader').length!=0
-			// 			)
-			// 		{
-
-			// 				video.load();
-			// 				video.play();
-			// 			// img.hidden = true;
-			// 			// video.hidden = false;
-			// 			clearInterval(_update);
-			// 			// img.style.display = "none";
-			// 			// document.getElementsByClassName('loader')[0].style.display = "none";
-			// 			// document.getElementsByClassName('cover')[0].style.opacity = "0";
-			// 			// document.body.removeChild(document.getElementsByClassName('cover')[0]);
-			// 		}
-			// 	}
-
-			// }, 100);
-
-			document.getElementById("social-links").style.marginTop = "-"+(parseInt(getComputedStyle(document.getElementById("fb-icon")).marginBottom)+parseInt(document.getElementById("fb-icon").offsetHeight))+"px";
-
-			setInterval(function () {
-
-				document.getElementById("social-links").style.marginTop = "-"+(parseInt(getComputedStyle(document.getElementById("fb-icon")).marginBottom)+parseInt(document.getElementById("fb-icon").offsetHeight))+"px";
-
-
-				// var video = document.getElementsByClassName('back-video')[0];
-
-				// if(video.paused)
-				// {
-				// 	video.load();
-				// 	video.play();
-				// }
-
-			}, 100);
-
-			// let img_roll_index = 0;
-
-			// let img_roll_update = setInterval(function () {
-
-			// 	var video = document.getElementsByTagName('video')[0];
-			// 	var img = document.getElementById('video-poster-img');
-			// 	let frames = [
-			// 	"assets/frames/frame01.png",
-			// 	"assets/frames/frame02.png",
-			// 	"assets/frames/frame03.png",
-			// 	"assets/frames/frame04.png",
-			// 	"assets/frames/frame05.png"
-			// 	];
-
-			// 	if(video!=null)
-			// 	{
-			// 		if(video.readyState !== 4)
-			// 		{
-
-			// 			// console.log(img_roll_index);
-			// 			if(img.src.includes(frames[img_roll_index]))
-			// 			{
-			// 				if(img_roll_index>=frames.length-1)
-			// 				{
-			// 					img_roll_index=-1;
-			// 				}
-			// 				img.src=frames[img_roll_index+1]+"?"+Date.now();
-			// 				img_roll_index++;
-			// 			}
-			// 			// console.log(img_roll_index);
-			// 		}
-			// 		else
-			// 		{
-			// 			clearInterval(img_roll_update);
-			// 		}
-			// 	}
-
-
-			// }, 5000);
-
-			function customgetRng(_nums, len)
-			{
-				let rng = Math.floor(Math.random() * len);
-				if(!_nums.includes(rng))
-					_nums.push(rng);
-				else
-					rng = customgetRng(_nums, len);
-				return rng;
-			}
-
-
-
-			function generateProducts(container)
-			{
-				var small_container_Element = document.getElementsByClassName(container)[0];
-
-
-				for(var j=0; j<1;j++)
-				{
-					var row_Element = CreateElement('div', 'row', small_container_Element);
-
-						for(var i=0; i<4; i++)
-						{
-							let num = customgetRng(nums, 11);
-
-							var col_4_Element = CreateElement('div', 'col-4', row_Element);
-
-							const __url = location.protocol + '//' + location.host;
-							var _a = CreateElement('a', '', col_4_Element);
-							_a.href=__url+"/Product"+"?"+"id="+products[num].id;
-
-							var _div_parent = CreateElement('div', '', _a);
-							_div_parent.style="margin-top: -43px;";
-
-								const _product = products[num];
-								col_4_Element.id=_product.id;
-								CreateElement('img', '', _div_parent).src = _product.img_src;
-								CreateElement('h4', 'product-text', _a).innerHTML = _product.name;
-								// add arabic products name with : font-family: 'fonts/HONORSansArabicUI-R', sans-serif; if name is arabic
-								// CreateElement('p', '', _a).innerHTML = _product.price+" DH";
-						}
-				}
-			}
-
-
-
-
-
-
-
-
-
-
-
-			var MenuItems = document.getElementById("MenuItems");
-			MenuItems.style.maxHeight = "0px";
-
-			function menutoggle()
-			{
-				if(MenuItems.style.maxHeight == "0px")
-				{
-					MenuItems.style.maxHeight = "100vh";
-					document.getElementById("Title").style.opacity = "0";
-					document.getElementsByClassName("explorebtn")[0].style.opacity = "0";
-					document.getElementsByClassName("text-logo")[0].style.opacity = "0";
-					document.getElementById("social-links").style.opacity = "0";
-
-					document.getElementById("top-menu-icon-bar").style.transform = "rotate(45deg) translate(25%, 125%)";
-					document.getElementById("mid-menu-icon-bar").style.transition = "0s";
-					document.getElementById("mid-menu-icon-bar").style.transform = "rotate(0deg)";
-					document.getElementById("mid-menu-icon-bar").style.width = "0";
-					// document.getElementById("mid-menu-icon-bar").style.opacity = "0";
-					document.getElementById("bot-menu-icon-bar").style.transform = "rotate(-45deg) translate(25%, -125%)";
-				}
-				else
-				{
-					MenuItems.style.maxHeight = "0px";
-					document.getElementById("Title").style.opacity = "1";
-					document.getElementsByClassName("explorebtn")[0].style.opacity = "1";
-					document.getElementsByClassName("text-logo")[0].style.opacity = "1";
-					document.getElementById("social-links").style.opacity = "1";
-
-					document.getElementById("top-menu-icon-bar").style.transform = "rotate(0deg)";
-					document.getElementById("mid-menu-icon-bar").style.transition = "0.5s";
-					document.getElementById("mid-menu-icon-bar").style.transform = "rotate(0deg)";
-					document.getElementById("mid-menu-icon-bar").style.width = "35px";
-					// document.getElementById("mid-menu-icon-bar").style.opacity = "1";
-					document.getElementById("bot-menu-icon-bar").style.transform = "rotate(0deg)";
-				}
-			}
-
-			// if(document.fullscreenEnabled)
-			// {
-				// hide scrollbar
-			// }
-
-
-			// lastly commented
-						// const __url = location.protocol + '//' + location.host;
-
-						// let curr_product = products[0];
-						// var _href = document.getElementsByClassName('main-page-product')[0].children[0];
-						// _href.href = __url+"/Product"+"?"+"id="+curr_product.id;
-						// _href.children[1].innerText = curr_product.name; // h4 : product name
-						// _href.children[0].children[0].src = curr_product.img_src;
-
-						// curr_product = products[1];
-						// _href = document.getElementsByClassName('main-page-product')[1].children[0];
-						// _href.href = __url+"/Product"+"?"+"id="+curr_product.id;
-						// _href.children[1].innerText = curr_product.name; // h4 : product name
-						// _href.children[0].children[0].src = curr_product.img_src;
-			
-			// var _row2 = _row.children[0].children[1];
-
-			// 	const _children = [];
-
-			// 	// for(var i=0; i<4; i++) {
-			// 	// 	_row2.removeChild(_row2.children[0]);
-			// 	// }
-				
-			// 	for(var i=0; i<curr_product.product_details_imgs.length; i++) {
-			// 		var col = CreateElement('div', 'small-img-col', _row2);
-			// 		var img = CreateElement('img', 'small-img', col).style = "width: 100%";
-			// 	}
-
-			// 	for(var i=0; i<_row2.children.length; i++) {
-			// 		_children.push(_row2.children[i]);
-			// 	}
-
-			// 	if(curr_product.product_details_imgs[0]!=null&&curr_product.product_details_imgs.length>1)
-			// 		_children[0].children[0].src = curr_product.product_details_imgs[0];
-			// 	else
-			// 		_row2.removeChild(_children[0]);
-
-			// 	for(var i=1; i<_row2.children.length; i++) {
-			// 		var child = _children[i];
-			// 		console.log(child);
-			// 		if(child==null)
-			// 			continue;
-			// 		if(curr_product.product_details_imgs[1]!=null)
-			// 			child.children[0].src = curr_product.product_details_imgs[i];
-			// 		else
-			// 			_row2.removeChild(child);
-			// 	}
-
-		</script>
-	<!-- ------------------------ js for toggle menu & more END ---------------------- -->
+	<!-- Footer END -->
 
 	<!-- JS START -->
 
-		<script src="javascript/home.js"></script>
+		<script type="text/javascript" src="/js/main.js"></script>
+		<script type="text/javascript" src="/js/home.js"></script>
 
 	<!-- JS END -->
 
